@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: replace ganapathi2021 with your GitHub username
+Sitemap: https://ganapathi2021.github.io/harshithcreations/sitemap.xml
