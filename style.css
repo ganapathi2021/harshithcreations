@@ -169,3 +169,55 @@ footer a { color: var(--brand-dark); }
 
 .logo .logo-text { color: var(--brand-dark); }
 .logo .logo-text span { color: var(--accent); }
+
+/* Mobile layout fixes: keep the full navigation visible, including the language switch */
+@media (max-width: 720px) {
+  .nav {
+    align-items: center;
+    gap: 8px;
+  }
+  .logo {
+    min-width: 0;
+    max-width: 100%;
+    font-size: clamp(0.95rem, 4.2vw, 1.15rem);
+    gap: 7px;
+  }
+  .logo img {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+    gap: 4px;
+    padding: 4px 0 8px;
+  }
+  .nav-links li {
+    flex: 0 0 auto;
+  }
+  .nav-links a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 7px 9px;
+    font-size: 0.82rem;
+  }
+  .hero {
+    padding: 42px 0 38px;
+  }
+  section {
+    padding: 44px 0;
+  }
+  .card {
+    padding: 18px;
+  }
+  .btn-row .btn {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
