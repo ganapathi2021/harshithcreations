@@ -221,3 +221,26 @@ footer a { color: var(--brand-dark); }
   }
 }
 
+
+/* Strong mobile navigation fix */
+@media screen and (max-width: 720px) {
+  .site-header { position: sticky; top: 0; }
+  .nav { display: flex; flex-direction: column; align-items: stretch; }
+  .nav .logo { align-self: flex-start; }
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    max-width: 100%;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    white-space: normal !important;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links li { display: block; }
+  .nav-links a { padding: 6px 8px !important; font-size: 0.8rem !important; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .wrap { width: calc(100% - 28px); }
+}
