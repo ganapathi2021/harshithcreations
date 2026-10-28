@@ -248,3 +248,15 @@ footer a { color: var(--brand-dark); }
 
 /* Actual book cover image */
 .book-cover-img { display: block; width: 100%; aspect-ratio: 3 / 4; height: auto; object-fit: cover; border-radius: 12px; margin-bottom: 14px; }
+
+
+/* Bigger header logo */
+.logo { font-size: 1.7rem; gap: 12px; }
+.logo .logo-text { font-weight: 800; letter-spacing: 0.3px; }
+.logo img { width: 54px; height: 54px; flex: 0 0 54px; }
+.nav { min-height: 80px; }
+@media (max-width: 720px) {
+  .logo { font-size: clamp(1.2rem, 5.6vw, 1.55rem); }
+  .logo img { width: 46px; height: 46px; flex: 0 0 46px; }
+  .nav { min-height: 0; }
+}
