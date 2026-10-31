@@ -276,7 +276,7 @@ footer a { color: var(--brand-dark); }
   
 /* Menu links as buttons */
 .nav-links a {
-  background: #fff;
+  background: #ffe3dc;
   border: 2px solid var(--brand);
   color: var(--ink);
   font-weight: 600;
