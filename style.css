@@ -294,3 +294,10 @@ footer a { color: var(--brand-dark); }
 .faq details[open] summary::after { content: "−"; }
 .faq details p { color: var(--muted); margin-top: 10px; font-size: 0.95rem; }
 
+
+/* Header fix (Nov 2026): keep logo name and menu buttons on one line each; on medium screens the menu moves below the logo */
+.logo .logo-text, .nav-links a { white-space: nowrap; }
+@media (min-width: 721px) and (max-width: 1240px) {
+  .nav { flex-wrap: wrap; row-gap: 10px; padding: 10px 0 12px; }
+  .nav-links { width: 100%; flex-wrap: wrap; justify-content: flex-start; gap: 6px; }
+}
